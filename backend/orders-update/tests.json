@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "Update without token - forbidden",
+      "method": "POST",
+      "path": "/",
+      "body": {"id": 1, "status": "in_progress", "worker": "Петр"},
+      "expectedStatus": 403,
+      "expectedBody": {"error": "Нет доступа"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

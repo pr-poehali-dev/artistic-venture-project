@@ -1,0 +1,6 @@
+{
+  "orders-update": "https://functions.poehali.dev/6fa0ff69-3c6d-4342-b87d-52b3135f695b",
+  "orders": "https://functions.poehali.dev/9258906b-abb7-4e4b-95be-583d1a97d2f8",
+  "portfolio": "https://functions.poehali.dev/2992a3a0-1f62-42a7-bd67-2620d4720879",
+  "admin-login": "https://functions.poehali.dev/b92da7e3-45fe-453e-b2db-efed81f5840f"
+}

@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Wrong password",
+      "method": "POST",
+      "path": "/",
+      "body": {"password": "wrongpassword"},
+      "expectedStatus": 401,
+      "expectedBody": {"error": "Неверный пароль"},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Correct password",
+      "method": "POST",
+      "path": "/",
+      "body": {"password": "admin123"},
+      "expectedStatus": 200,
+      "expectedBody": {"token": "string"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

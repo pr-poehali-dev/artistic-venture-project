@@ -1,0 +1,21 @@
+{
+  "tests": [
+    {
+      "name": "Create order",
+      "method": "POST",
+      "path": "/",
+      "body": {"name": "Иван", "phone": "+79991234567", "description": "Тестовый заказ"},
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get orders without token - forbidden",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 403,
+      "expectedBody": {"error": "Нет доступа"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
